@@ -13,7 +13,7 @@
             <stop stop-color="#FC6A6A" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="DeepHire-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Jurbly-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Vertical" transform="translate(-1460.000000, -1040.000000)" fill-rule="nonzero">
             <g id="logomark" transform="translate(1340.000000, 848.000000)">
                 <path d="M960,528 L960,288 L480,288 L480,528 L384,528 L384,240 C384,213.490332 405.490332,192 432,192 L1008,192 C1034.50967,192 1056,213.490332 1056,240 L1056,528 L960,528 Z" id="handle" fill="url(#linearGradient-1)"></path>
