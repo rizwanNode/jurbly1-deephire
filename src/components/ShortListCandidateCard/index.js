@@ -75,7 +75,7 @@ const ShortListAnalyticsCard = ({ item }) => (
         </Row>
       )}
 
-      {item.candidateEmail === 'russell@deephire.com' && (
+      {item.candidateEmail === 'max@jurbly.com' && (
         <div style={{ paddingTop: '20px' }}>
           {'Russell_Resume.pdf: '}
           <CheckCircleOutlined style={{ color: 'green' }} /> <br />
