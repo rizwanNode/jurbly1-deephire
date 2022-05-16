@@ -6,7 +6,7 @@ import { Upload, Button, Card, Skeleton } from 'antd';
 
 import PropTypes from 'prop-types';
 
-const url = 'https://a.deephire.com/v1/candidates';
+const url = 'https://a.jurbly.com/v1/candidates';
 
 const EditableCard = ({ key, documentProps }) => (
   <>
