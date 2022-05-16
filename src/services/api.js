@@ -3,7 +3,7 @@ import auth0 from 'auth0-js';
 import request from '@/utils/request';
 import AUTH_CONFIG from '@/Auth/auth0-variables';
 
-const newApi = 'https://a.deephire.com/v1';
+const newApi = 'https://a.jurbly.com/v1';
 
 // const newApi = 'http://localhost:3001';
 // const newApi = 'http://localhost:3000/v1';
@@ -636,7 +636,7 @@ export async function getEventbyId(interviewId) {
 }
 
 export async function sendTgMsg(data) {
-  navigator.sendBeacon('https://deephire.com/api/tg', JSON.stringify(data));
+  navigator.sendBeacon('https://jurbly.com/api/tg', JSON.stringify(data));
 }
 
 export function downloadFile(companyId, filename, startDate, endDate) {
