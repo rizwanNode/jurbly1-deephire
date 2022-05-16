@@ -265,13 +265,13 @@ class BasicLayout extends React.PureComponent {
     const currRouterData = this.matchParamsPath(pathname);
 
     if (!currRouterData) {
-      return 'DeepHire';
+      return 'Jurbly';
     }
     const message = formatMessage({
       id: currRouterData.locale || currRouterData.name,
       defaultMessage: currRouterData.name,
     });
-    return `${message} - DeepHire`;
+    return `${message} - Jurbly`;
   };
 
   getLayoutStyle = () => {
@@ -421,7 +421,7 @@ const ExpiredModal = ({ visible }) => {
       closable={false}
       visible={visible}
       footer={null}
-      title="Trial Ended, please pick a plan to continue using DeepHire"
+      title="Trial Ended, please pick a plan to continue using Jurbly"
     >
       <BillingCards />
     </Modal>
