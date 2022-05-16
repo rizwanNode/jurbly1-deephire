@@ -36,6 +36,6 @@ window.addEventListener('sw.updated', e => {
 
   notification.open({
     message: 'New Update',
-    description: 'DeepHire has been updated.',
+    description: 'Jurbly has been updated.',
   });
 });
