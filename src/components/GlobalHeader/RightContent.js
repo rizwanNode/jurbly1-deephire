@@ -97,7 +97,7 @@ export default class GlobalHeaderRight extends PureComponent {
         </Menu.Item>
 
         <Menu.Divider />
-        <Menu.Item onClick={() => window.open('https://help.deephire.com', '_blank')} key="support">
+        <Menu.Item onClick={() => window.open('https://help.jurbly.com', '_blank')} key="support">
           <BookOutlined />
           Help Center
         </Menu.Item>
