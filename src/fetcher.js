@@ -1,4 +1,4 @@
-const root = 'https://a.deephire.com';
+const root = 'https://a.jurbly.com';
 // const root = 'http://localhost:3000';
 
 const setHeaders = () => ({
