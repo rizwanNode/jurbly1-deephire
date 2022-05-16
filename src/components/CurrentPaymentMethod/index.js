@@ -95,7 +95,7 @@ const CurrentPaymentMethod = () => {
           <a onClick={cancelSubscription}>Cancel Subscription</a>
         </Col>
         <Col className={styles.spacing} style={{ marginLeft: 16 }}>
-          <div>{`${productName || 'DeepHire Trial'}`}</div>
+          <div>{`${productName || 'Jurbly Trial'}`}</div>
           <div>{amount ? `$${amount / 100}/${interval}` : ''}</div>
           <div>{`${renewsOn}`}</div>
         </Col>
