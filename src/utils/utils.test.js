@@ -63,12 +63,12 @@ describe('isUrl tests', () => {
 
 describe('getHttpUrl(url) tests', () => {
   it('should not change http or https urls', () => {
-    expect(getHttpUrl('https://deephire.com')).toEqual('https://deephire.com');
-    expect(getHttpUrl('http://deephire.com')).toEqual('http://deephire.com');
-    expect(getHttpUrl('//deephire.com')).toEqual('//deephire.com');
+    expect(getHttpUrl('https://jurbly.com')).toEqual('https://jurbly.com');
+    expect(getHttpUrl('http://jurbly.com')).toEqual('http://jurbly.com');
+    expect(getHttpUrl('//jurbly.com')).toEqual('//jurbly.com');
   });
   it('should change non http urls', () => {
-    expect(getHttpUrl('deephire.com')).toEqual('http://deephire.com');
+    expect(getHttpUrl('jurbly.com')).toEqual('http://jurbly.com');
   });
   it('should handle null inputs', () => {
     expect(getHttpUrl(null)).toEqual('Loading ...');
