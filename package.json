@@ -1,5 +1,5 @@
 {
-  "name": "DeepHire",
+  "name": "Jurbly",
   "version": "2.0.0",
   "description": "Automated one way Interviews",
   "private": true,
@@ -20,7 +20,7 @@
     "generate-mock": "node ./scripts/generateMock.js",
     "test:component": "umi test ./src/components",
     "prettier": "prettier --write ./src/**/**/**/*",
-    "deploy": "CI=false yarn build && aws s3 sync --delete dist/ s3://recruiter.deephire.com &&  aws cloudfront create-invalidation --distribution-id E3NQM2SFD9O6RQ  --paths /*"
+    "deploy": "CI=false yarn build && aws s3 sync --delete dist/ s3://recruiter.jurbly.com &&  aws cloudfront create-invalidation --distribution-id E3NQM2SFD9O6RQ  --paths /*"
   },
   "dependencies": {
     "@ant-design/colors": "^4.0.0",
