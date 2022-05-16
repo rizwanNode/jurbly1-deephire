@@ -105,9 +105,9 @@ const description = (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://help.deephire.com/en/article/deephire-clockwork-integration-tt2laq/"
+        href="https://help.jurbly.com/en/article/jurbly-clockwork-integration-tt2laq/"
       >
-        Check the tutorial to setup DeepHire with Clockwork
+        Check the tutorial to setup Jurbly with Clockwork
       </a>
     </div>
   </div>
