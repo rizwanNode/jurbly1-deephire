@@ -173,7 +173,7 @@ class ShareCandidateButton extends React.Component {
             type="success"
             title="Share Link Created!"
             description={`Send this link to ${shareName}`}
-            extra={this.information(shareLink, 'russell@deephire.com')}
+            extra={this.information(shareLink, 'max@jurbly.com')}
             extraStyle={{ textAlign: 'center', padding: '5px', fontSize: '15px' }}
           />
         </Modal>
