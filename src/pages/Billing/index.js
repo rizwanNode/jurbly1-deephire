@@ -94,7 +94,7 @@ const Billing = () => {
   return (
     <Row type="flex" justify="center">
       <Col span={24}>
-        <Card title="DeepHire Basic" extra={<UpgradeButton text="Upgrade Package" />}>
+        <Card title="Jurbly Basic" extra={<UpgradeButton text="Upgrade Package" />}>
           <Stripey />
           <Spin spinning={!invoices}>
             <ConfigProvider
