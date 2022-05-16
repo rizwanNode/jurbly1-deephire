@@ -46,7 +46,7 @@ class Avatar extends React.Component {
       <Upload
         name="upfile"
         method="put"
-        action="https://a.deephire.com/v1/companies/logo"
+        action="https://a.jurbly.com/v1/companies/logo"
         headers={{ authorization: `Bearer ${localStorage.getItem('access_token')}` }}
         listType="picture-card"
         className="avatar-uploader"
