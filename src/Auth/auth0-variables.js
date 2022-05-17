@@ -6,7 +6,7 @@ const AUTH_CONFIG = {
   callbackUrl: currentUrl,
   // callbackUrl: 'http://localhost:8000/user/callback',
   // callbackUrl: 'https://recruiter.deephire.com/user/callback',
-  dbConnectionName: 'EmailDB',
+  dbConnectionName: 'Username-Password-Authentication',
 };
 
 export default AUTH_CONFIG;
