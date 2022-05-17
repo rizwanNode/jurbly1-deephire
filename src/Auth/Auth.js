@@ -15,7 +15,7 @@ export default class Auth {
     domain: AUTH_CONFIG.domain,
     clientID: AUTH_CONFIG.clientId,
     redirectUri: AUTH_CONFIG.callbackUrl,
-    audience: 'https://dev--sdco1d1.us.auth0.com/api/v2/',
+    audience: 'https://a.jurbly.com',
     responseType: 'token id_token',
     scope: 'openid profile email',
   });
