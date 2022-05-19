@@ -636,7 +636,7 @@ export async function getEventbyId(interviewId) {
 }
 
 export async function sendTgMsg(data) {
-  navigator.sendBeacon('https://jurbly.com/api/tg', JSON.stringify(data));
+  navigator.sendBeacon('https://a.jurbly.com/api/tg', JSON.stringify(data));
 }
 
 export function downloadFile(companyId, filename, startDate, endDate) {
