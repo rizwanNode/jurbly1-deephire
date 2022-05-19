@@ -6,7 +6,7 @@ const AUTH_CONFIG = {
   callbackUrl: currentUrl,
   // callbackUrl: 'http://localhost:8000/user/callback',
   // callbackUrl: 'https://recruiter.deephire.com/user/callback',
-  dbConnectionName: 'Username-Password-Authentication',
+  dbConnectionName: 'JurblyDB',
 };
 
 export default AUTH_CONFIG;
