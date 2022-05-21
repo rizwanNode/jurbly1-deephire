@@ -58,7 +58,7 @@ const ScheduleButton = ({ execute, data, customButton, editMode }) => {
   const { data: edit, isLoading, mutate } = useLive(selectedId);
   const { data: recruiterProfile } = useRecruiter();
   // eslint-disable-next-line camelcase
-  const teamsData = recruiterProfile?.app_metadata?.team;
+  const teamsData = recruiterProfile?.user_metadata?.team;
   const recruiterTeams =
     Array.isArray(teamsData) && teamsData?.length === 1 ? teamsData[0] : teamsData;
   const isShown = editMode ? edit && !isLoading : true;
