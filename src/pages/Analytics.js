@@ -36,36 +36,36 @@ const Analytics = () => {
 
   const downloadUsers = () => {
     // eslint-disable-next-line camelcase
-    if (profile?.app_metadata?.companyId) {
-      downloadFile(profile.app_metadata.companyId, 'users.csv', startDate, endDate);
+    if (profile?.user_metadata?.companyId) {
+      downloadFile(profile.user_metadata.companyId, 'users.csv', startDate, endDate);
     }
   };
 
   const downloadJobs = () => {
     // eslint-disable-next-line camelcase
-    if (profile?.app_metadata?.companyId) {
-      downloadFile(profile.app_metadata.companyId, 'jobs.csv', startDate, endDate);
+    if (profile?.user_metadata?.companyId) {
+      downloadFile(profile.user_metadata.companyId, 'jobs.csv', startDate, endDate);
     }
   };
 
   const downloadCandidates = () => {
     // eslint-disable-next-line camelcase
-    if (profile?.app_metadata?.companyId) {
-      downloadFile(profile.app_metadata.companyId, 'candidates.csv', startDate, endDate);
+    if (profile?.user_metadata?.companyId) {
+      downloadFile(profile.user_metadata.companyId, 'candidates.csv', startDate, endDate);
     }
   };
 
   const downloadBranch = () => {
     // eslint-disable-next-line camelcase
-    if (profile?.app_metadata?.companyId) {
-      downloadFile(profile.app_metadata.companyId, 'branch.csv', startDate, endDate);
+    if (profile?.user_metadata?.companyId) {
+      downloadFile(profile.user_metadata.companyId, 'branch.csv', startDate, endDate);
     }
   };
 
   const downloadClient = () => {
     // eslint-disable-next-line camelcase
-    if (profile?.app_metadata?.companyId) {
-      downloadFile(profile.app_metadata.companyId, 'client.csv', startDate, endDate);
+    if (profile?.user_metadata?.companyId) {
+      downloadFile(profile.user_metadata.companyId, 'client.csv', startDate, endDate);
     }
   };
 
