@@ -59,14 +59,14 @@ const LiveInterviews = () => {
   }, [reload]);
 
   useEffect(() => {
-    const team = recruiterProfile?.app_metadata?.team;
+    const team = recruiterProfile?.user_metadata?.team;
     if (!team) return;
 
     setFilteredInfo(values => ({
       ...values,
       createdByTeam: Array.isArray(team) ? team : [team],
     }));
-  }, [recruiterProfile?.app_metadata?.team]);
+  }, [recruiterProfile?.user_metadata?.team]);
 
   useEffect(() => {
     if (value) setLiveInterviews(value);
