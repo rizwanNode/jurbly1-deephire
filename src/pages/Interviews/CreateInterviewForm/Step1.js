@@ -156,7 +156,7 @@ class Step1 extends React.PureComponent {
     const { validateFields } = form;
     const {
       recruiterProfile: {
-        app_metadata: { team },
+        user_metadata: { team },
       },
     } = this.context;
 
