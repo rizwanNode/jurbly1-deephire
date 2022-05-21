@@ -75,7 +75,7 @@ class ShareCandidateButton extends React.Component {
     const { currentStep, hideInfo, requireName } = this.state;
     const {
       recruiterProfile: {
-        app_metadata: { team },
+        user_metadata: { team },
       },
     } = this.context;
     form.validateFields((err, data) => {
