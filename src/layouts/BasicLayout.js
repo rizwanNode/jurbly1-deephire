@@ -107,8 +107,8 @@ class BasicLayout extends React.PureComponent {
     this.setState({ recruiterProfile });
 
     // eslint-disable-next-line camelcase
-    if (recruiterProfile?.app_metadata) {
-      const { role } = recruiterProfile.app_metadata;
+    if (recruiterProfile?.user_metadata) {
+      const { role } = recruiterProfile.user_metadata;
       if (role === 'admin' || role === 'user') {
         setAuthority(role);
         reloadAuthorized();
