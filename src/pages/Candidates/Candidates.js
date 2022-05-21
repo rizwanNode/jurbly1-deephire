@@ -116,11 +116,11 @@ const Candidates = () => {
   }, [archives, recruiterProfile, reload]);
 
   useEffect(() => {
-    const team = recruiterProfile?.app_metadata?.team;
+    const team = recruiterProfile?.user_metadata?.team;
     if (!team) return;
 
     setSelectFilter(Array.isArray(team) ? team : [team]);
-  }, [recruiterProfile?.app_metadata?.team]);
+  }, [recruiterProfile?.user_metadata?.team]);
 
   const { filters: createdByTeamFilters, onFilter } = handleFilter(
     videos,
