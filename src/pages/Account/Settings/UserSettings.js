@@ -87,7 +87,7 @@ const Team = () => {
       title: 'Role',
       render(test, data) {
         const {
-          app_metadata: { role },
+          user_metadata: { role },
         } = data;
         return <Tag>{role}</Tag>;
       },
@@ -106,7 +106,7 @@ const Team = () => {
       // dataIndex: 'app_metadata.role',
       render(test, data) {
         const {
-          app_metadata: { team },
+          user_metadata: { team },
         } = data;
         if (Array.isArray(team)) {
           return (
@@ -252,8 +252,8 @@ const Team = () => {
           name="basic"
           onFinish={onFinish}
           initialValues={{
-            role: selectedRecruiter.app_metadata?.role,
-            team: selectedRecruiter.app_metadata?.team,
+            role: selectedRecruiter.user_metadata?.role,
+            team: selectedRecruiter.user_metadata?.team,
           }}
           hideRequiredMark
         >
