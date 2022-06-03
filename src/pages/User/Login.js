@@ -11,6 +11,7 @@ import Login from '@/components/Login';
 
 import Auth from '../../Auth/Auth';
 import styles from './Login.less';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import auth_main_img from '../../assets/img/left_auth_img.png';
 import facebook from '../../assets/img/faecbook.svg';
@@ -24,6 +25,9 @@ import email from '../../assets/img/email.svg';
 
 import Bag from '../../assets/img/Bag.svg';
 import name from '../../assets/img/name.svg';
+=======
+
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
 const { Paragraph, Title } = Typography;
 
 const ObjectID = require('bson-objectid');
@@ -123,7 +127,10 @@ class LoginPage extends Component {
 
   handleSubmit = () => {
     this.loginForm.validateFields((err, values) => {
+<<<<<<< HEAD
       console.log(values);
+=======
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
       if (!err) {
         const { type } = this.state;
 
@@ -175,6 +182,7 @@ class LoginPage extends Component {
     return (
       <div className={styles.main}>
         {!forgotPassword ? (
+<<<<<<< HEAD
           <div>
             <Login
               defaultActiveKey={type}
@@ -368,6 +376,63 @@ class LoginPage extends Component {
               {/* </div> */}
             </Login>
           </div>
+=======
+          <Login
+            defaultActiveKey={type}
+            onTabChange={this.onTabChange}
+            onSubmit={this.handleSubmit}
+            ref={form => {
+              this.loginForm = form;
+            }}
+          >
+            <Tab key="account" tab="Login">
+              {/* <LinkedInLoginButton align="center" size={40} onClick={auth.loginWithLinkedin}>
+                <span style={{ marginLeft: -18 }}>Login with Linkedin</span>
+              </LinkedInLoginButton>
+              <Divider>or</Divider> */}
+
+              <Email name="email" placeholder="company email" defaultValue={signupEmail} />
+              <Password
+                name="password"
+                placeholder="password"
+                onPressEnter={() => this.loginForm.validateFields(this.handleSubmit)}
+              />
+            </Tab>
+
+            <Tab key="signUp" tab="Sign Up">
+              {invited ? (
+                <InvitedText createdByName={createdByName} companyName={companyName} />
+              ) : (
+                <DefaultText />
+              )}
+              {type === 'signUp' && (
+                <>
+                  <Name name="name" placeholder="full name" />
+                  <Company disabled={Boolean(invited)} name="company" placeholder="company" />
+                </>
+              )}
+              <Email
+                disabled={Boolean(invited)}
+                name="email"
+                placeholder="company email"
+                defaultValue={signupEmail}
+              />
+              <Password
+                name="password"
+                placeholder="password"
+                onPressEnter={() => this.loginForm.validateFields(this.handleSubmit)}
+              />
+            </Tab>
+
+            <Submit style={{ marginTop: -24, marginBottom: 0 }} loading={submitting}>
+              {type === 'account' ? 'Login' : 'Sign up'}
+            </Submit>
+            <Button style={{ float: 'right' }} onClick={() => this.setForgotPass(true)} type="link">
+              Forgot Password
+            </Button>
+            {/* </div> */}
+          </Login>
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
         ) : (
           <ForgotPassScreen setForgotPass={() => this.setForgotPass()} />
         )}

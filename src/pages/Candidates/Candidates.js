@@ -51,6 +51,10 @@ const Candidates = () => {
   const [archives, setArchives] = useState(tab === '2');
   const [selectFilter, setSelectFilter] = useState([]);
   const [reload, setReload] = useState(false);
+<<<<<<< HEAD
+=======
+  // const [pageInfo, setPageInfo] = useState({ page, pageSize });
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
 
   const setPageData = (page, pageSize) => {
     router.push(`/one-way/candidates/?tab=${tab}&page=${page}&pageSize=${pageSize}`);
@@ -61,11 +65,31 @@ const Candidates = () => {
   const globalData = useContext(GlobalContext);
   const { videos, setVideos, recruiterProfile } = globalData;
 
+<<<<<<< HEAD
+=======
+  // eslint-disable-next-line camelcase
+  // const team = recruiterProfile?.app_metadata?.team;
+
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
   const [filteredData, setFilteredData] = useState(videos);
 
   const candidateCount = Number(localStorage.getItem('candidateCount'));
   const countOfCandidates = new Array(candidateCount).fill(5);
 
+<<<<<<< HEAD
+=======
+  // const createDataSource = data => {
+  //   const searchDataSource = [];
+  //   data.forEach(candidate => {
+  //     if (candidate.userName) searchDataSource.push(candidate.userName);
+  //     if (candidate.candidateEmail) searchDataSource.push(candidate.candidateEmail);
+  //     if (candidate.interviewName) searchDataSource.push(candidate.interviewName);
+  //   });
+  //   const unique = [...new Set(searchDataSource)];
+  //   setDataSource(unique);
+  // };
+
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
   useEffect(() => {
     const searchDataSource = [];
     filterByTeam.forEach(candidate => {
@@ -81,7 +105,17 @@ const Candidates = () => {
   const getData = async () => {
     setLoading(true);
     const data = await (archives ? getArchivedVideos() : getVideos());
+<<<<<<< HEAD
 
+=======
+    // if (team) {
+    //   data = data.filter(video => {
+    //     if (!video.completeInterviewData?.interviewData?.createdByTeam) return null;
+    //     return video.completeInterviewData?.interviewData?.createdByTeam.includes(team);
+    //   });
+    // }
+    // createDataSource(data || []);
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
     setVideos(data || []);
     setFilteredData(data || []);
     setLoading(false);
@@ -169,7 +203,59 @@ const Candidates = () => {
             <Tabs.TabPane tab="Hidden" key="2" />
           </Tabs>
         }
+<<<<<<< HEAD
       />
+=======
+      >
+        {/* <Row align="middle" type="flex" justify="space-between">
+          <Col>
+            <ShareCandidateButton
+              marginRight
+              isDisabled={selectedCards.length === 0}
+              candidateData={selectedCards}
+            />
+            {selectedCards.length !== 0 && (
+              <span>
+                <ArchiveButton
+                  onClick={() => setSelectedCards([])}
+                  reload={getData}
+                  archives={archives}
+                  route="videos"
+                  archiveData={selectedCards}
+                />
+
+                {isAdmin() ? (
+                  <Popconfirm
+                    title="Permanently delete selected videos? All data will be deleted from our servers & unrecoverable."
+                    onConfirm={handleDelete}
+                    // onCancel={cancel}
+                    okText="Yes"
+                    cancelText="No"
+                  >
+                    <Button type="danger" style={{ marginRight: 16 }}>
+                      Delete
+                    </Button>
+                  </Popconfirm>
+                ) : null}
+              </span>
+            )}
+
+            <AutoComplete
+              style={{ width: 350 }}
+              allowClear
+              dataSource={dataSource}
+              onSelect={filter}
+              onSearch={shouldClear}
+              filterOption={(inputValue, option) =>
+                option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+              }
+              placeholder="Filter"
+            />
+          </Col>
+          <a onClick={() => setArchives(!archives)}>{archives ? 'View All' : 'View Hidden'} </a>
+        </Row> */}
+      </AntPageHeader>
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
       <Row justify="space-between" style={{ marginBottom: 16 }}>
         <Space>
           <AutoComplete

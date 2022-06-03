@@ -6,9 +6,15 @@
   "scripts": {
     "precommit": "npm run lint-staged",
     "presite": "npm run generate-mock && cd functions && npm install",
+<<<<<<< HEAD
     "start": "cross-env APP_TYPE=site umi dev --openssl-legacy-provider",
     "start:no-mock": "cross-env MOCK=none umi dev",
     "build": "umi build --openssl-legacy-provider",
+=======
+    "start": "cross-env APP_TYPE=site umi dev",
+    "start:no-mock": "cross-env MOCK=none umi dev",
+    "build": "umi build",
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
     "site": "npm run presite && cross-env APP_TYPE=site npm run build && firebase deploy",
     "analyze": "cross-env ANALYZE=1 umi build",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",

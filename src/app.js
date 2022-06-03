@@ -34,7 +34,10 @@ export function render(oldRender) {
     .then(res => res.json())
     .then(
       ret => {
+<<<<<<< HEAD
         console.log(ret);
+=======
+>>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
         authRoutes = ret;
         oldRender();
       },
