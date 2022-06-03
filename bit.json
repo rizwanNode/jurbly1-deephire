@@ -1,0 +1,13 @@
+{
+    "env": {
+        "compiler": "bit.envs/compilers/react"
+    },
+    "dependencies": {},
+    "componentsDefaultDirectory": "components/{namespace}/{name}",
+    "packageManager": "yarn",
+    "resolveModules": {
+        "aliases": {
+            "@": "src"
+        }
+    }
+}

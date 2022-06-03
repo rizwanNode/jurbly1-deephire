@@ -1,0 +1,74 @@
+@import '~antd/lib/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.removeCollapsePadding > .ant-collapse-content > .ant-collapse-content-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  left: 0 !important;
+}
+
+.collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-left: 24px !important;
+  color: @primary-color !important;
+}
+
+//TODO figure out a better way to solve this problem.
+// This was added because without it, there are some major styling issues with
+// the invite table in team settings
+.antd-pro-pages-account-settings-info-right {
+  width: 500px;
+}
+
+// Fixes a bug where the legacy forms don't take up 100% of the space after upgrading to antd 4.0
+.ant-legacy-form-item-control-wrapper {
+  width: 100%;
+}
+// adds global style - this is in two places. One in the bit component, the other place is here.
+// eventually, remove this from here.
+.question-selected {
+  background-color: #e6f7ff;
+}
+
+.quill-height {
+  & .ql-container {
+    & .ql-editor {
+      max-height: 200px;
+    }
+  }
+}
