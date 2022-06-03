@@ -1,54 +1,26 @@
-@import '~antd/lib/style/themes/default.less';
-.Login {
-  height: 100vh;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 0.6fr 1fr;
-}
-.Login_left_area {
-  position: relative;
-}
-.main_login_img {
-  height: 100%;
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-}
-.Login_left_area_buttom_wrapper {
-  position: absolute;
-  bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-}
-
-.Login_left_area_buttom_wrapper_list {
+.Login .left_area .buttom_wrapper ul > * + * {
   margin-left: 10px;
 }
-.Login_left_area_buttom_wrapper_ul {
+.Login .left_area .buttom_wrapper ul {
   display: flex;
   align-items: center;
 }
-.Login_right_area {
+.Login .right_area {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Login_right_area_form {
+.Login form {
   margin-top: 2rem;
 }
-.Login_right_area_form_list {
+.Login form > * + * {
   margin-top: 1rem;
 }
-.Login_right_area_form {
+.Login .right_area .form_area {
   width: 440px;
 }
-.Login_right_area_form_main_heading {
+.Login .right_area .form_area > h1 {
   font-family: Poppins;
   font-size: 28px;
   font-weight: 700;
@@ -56,7 +28,7 @@
   letter-spacing: 0em;
   color: #2f3367;
 }
-.Login_right_area_form_main_p {
+.Login .right_area .form_area > p {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
@@ -65,7 +37,7 @@
   margin-top: 10px;
   color: #303468;
 }
-.Login_right_area_buttom_area {
+.Login .right_area .form_area .bottom_area {
   padding-top: 20px;
   display: flex;
   align-items: center;
@@ -73,16 +45,15 @@
   margin-top: 2rem;
   border-top: 1px solid #ececf0;
 }
-.Login_right_area_buttom_area_p {
+.Login .right_area .form_area .bottom_area p {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 0px !important;
   color: #393d6e;
 }
-.Login_right_area_buttom_area_a {
+.Login .right_area .form_area .bottom_area a {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
@@ -91,12 +62,12 @@
   text-align: left;
   color: #007dfa;
 }
-.Login_right_area_buttom_wrapper {
+.Login form .button_wrapper {
   margin-top: 5rem;
   display: flex;
   justify-content: flex-end;
 }
-.Login_right_area_buttom_wrapper_button {
+.Login form .button_wrapper button {
   height: 70px;
   width: 176px;
   cursor: pointer;
@@ -115,7 +86,7 @@
   text-align: left;
   color: #ffffff;
 }
-.Login_right_area_buttom_wrapper_button_job_details {
+.Login form .button_wrapper button.job_details {
   background-color: #002140;
   width: 200px;
   margin-right: 10px;
@@ -124,6 +95,7 @@
   padding: 5rem 0rem;
   flex-direction: column;
   align-items: flex-start;
+  /* justify-content: space-between; */
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -192,18 +164,18 @@
   .Login {
     grid-template-columns: 1fr;
   }
-  .Login_left_area {
+  .Login .left_area {
     display: none;
   }
 }
 @media screen and (max-width: 508px) {
-  .Login_right_area_buttom_wrapper {
+  .Login form .button_wrapper {
     flex-direction: column;
   }
   .Login form .button_wrapper > * + * {
     margin-top: 10px;
   }
-  .Login_right_area_buttom_wrapper_button {
+  .Login form .button_wrapper button {
     width: 100% !important;
     height: 50px;
     font-size: 18px;
@@ -217,61 +189,15 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .Login_right_area_form {
+  .Login .right_area .form_area {
     width: 90%;
   }
   .Login .form_area_canditate .form_area {
     width: 100%;
   }
-  .Login_right_area_form_mbl {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 380px) {
-  .Login_right_area_buttom_area {
+  .Login .right_area .form_area .bottom_area {
     flex-direction: column;
-  }
-}
-
-.main {
-  // width: 368px;
-  margin: 0 auto;
-  @media screen and (max-width: @screen-sm) {
-    width: 95%;
-  }
-
-  .icon {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.2);
-    margin-left: 16px;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: color 0.3s;
-
-    &:hover {
-      color: @primary-color;
-    }
-  }
-
-  .icon2 {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.2);
-    vertical-align: middle;
-    cursor: pointer;
-    transition: color 0.3s;
-
-    &:hover {
-      color: @primary-color;
-    }
-  }
-
-  .other {
-    text-align: left;
-    margin-top: 24px;
-    line-height: 22px;
-
-    .register {
-      float: right;
-    }
   }
 }

@@ -34,6 +34,7 @@ export function render(oldRender) {
     .then(res => res.json())
     .then(
       ret => {
+        console.log(ret);
         authRoutes = ret;
         oldRender();
       },

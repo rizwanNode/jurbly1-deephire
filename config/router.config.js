@@ -155,11 +155,7 @@ export default [
             path: '/account/settings/integrations',
             component: './Account/Settings/IntegrationSettings',
           },
-          // {
-          //   authority: ['admin'],
-          //   path: '/account/settings/billing',
-          //   component: './Account/Settings/BillingSettings',
-          // },
+
           {
             path: '/account/settings/notification',
             component: './Account/Settings/NotificationView',
