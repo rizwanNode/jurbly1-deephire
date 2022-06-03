@@ -47,11 +47,7 @@ class UserLayout extends React.PureComponent {
       // @TODO <DocumentTitle title={this.getPageTitle()}>
       <div className={styles.container}>
         <div className={styles.content}>
-<<<<<<< HEAD
           {/* <div className={styles.top}>
-=======
-          <div className={styles.top}>
->>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
             <div className={styles.header}>
               <Link to="/">
                 <img alt="logo" className={styles.logo} src={logo} />
@@ -59,17 +55,10 @@ class UserLayout extends React.PureComponent {
               </Link>
             </div>
             <div className={styles.desc}>Simple Video Interviews Built for Recruiters</div>
-<<<<<<< HEAD
           </div> */}
           {children}
         </div>
         {/* <GlobalFooter links={links} copyright={copyright} /> */}
-=======
-          </div>
-          {children}
-        </div>
-        <GlobalFooter links={links} copyright={copyright} />
->>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
       </div>
     );
   }

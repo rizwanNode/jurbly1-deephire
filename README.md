@@ -3,11 +3,7 @@
 
 <div align="center">
 
-<<<<<<< HEAD
 Automated Video Interviews Built for Recruiters
-=======
-Automated Video Interviews Built for
->>>>>>> f91c1404b3a84c8bbfa1671e82db4a5dc45a9165
 
 
 [![recruiter.deephire.com](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.russell.work%2Fserver_status%3Fbadge%3Dhttps%3A%2F%2Frecruiter.deephire.com)](https://recruiter.deephire.com)
