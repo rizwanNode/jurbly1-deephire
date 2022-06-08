@@ -13,7 +13,7 @@ const data = [
     type: 'purchase',
 
     buttonLabel: 'Start Now',
-    stripePlan: 'price_1L1TacHgqvk3POlbO6ypMkoZ',
+    stripePlan: 'price_1L82t2Hgqvk3POlbay28LBcC',
 
     listItems: [
       {
@@ -45,7 +45,7 @@ const data = [
     priceLabel: 'Flexible Plans',
     buttonLabel: 'Contact Us',
     type: 'contact',
-    stripePlan: 'basic-monthly-v1',
+    stripePlan: 'price_1L82t2Hgqvk3POlbay28LBcC',
 
     listItems: [
       {
