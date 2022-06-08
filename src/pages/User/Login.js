@@ -91,6 +91,7 @@ class LoginPage extends Component {
     type: invited || signupEmail ? 'signUp' : 'account',
     forgotPassword: false,
     inviteData: null,
+    Error: null,
   };
 
   async componentDidMount() {
@@ -120,6 +121,11 @@ class LoginPage extends Component {
   setForgotPass(forgot) {
     this.setState({ forgotPassword: forgot });
   }
+  raiseError() {
+    // this.setState({
+    //   type: 'Email Already Used',
+    // });
+  }
 
   handleSubmit = () => {
     this.loginForm.validateFields((err, values) => {
@@ -130,6 +136,14 @@ class LoginPage extends Component {
         if (type === 'account') {
           auth.login(values.email, values.password);
         } else {
+          this.setState({
+            Error: null,
+          });
+          const newfunction = message => {
+            this.setState({
+              Error: message,
+            });
+          };
           const { inviteData } = this.state;
           let _id;
           let role = 'admin';
@@ -153,7 +167,7 @@ class LoginPage extends Component {
             [[['user-signup', { time: new Date().toString() }, 'green']]],
           ]);
 
-          auth.signup(values.email, values.password, values.name, {
+          auth.signup(values.email, values.password, values.name, newfunction, {
             company: values.company,
             companyId: _id,
             role,
@@ -238,7 +252,9 @@ class LoginPage extends Component {
 
                         <div className={styles.Login_right_area_buttom_wrapper}>
                           <Submit
-                            className={styles.Login_right_area_buttom_wrapper_button}
+                            className={`${styles.Login_right_area_buttom_wrapper_button} ${
+                              styles.Login_right_area_buttom_wrapper_button_special
+                            }`}
                             style={{ marginTop: -24, marginBottom: 0 }}
                             loading={submitting}
                           >
@@ -297,9 +313,15 @@ class LoginPage extends Component {
                           onPressEnter={() => this.loginForm.validateFields(this.handleSubmit)}
                         />
 
+                        {this.state.Error && (
+                          <p className={`Error_new ${styles.Error}`}>{this.state.Error}</p>
+                        )}
+
                         <div className={styles.Login_right_area_buttom_wrapper}>
                           <Submit
-                            className={styles.Login_right_area_buttom_wrapper_button}
+                            className={`${styles.Login_right_area_buttom_wrapper_button} ${
+                              styles.Login_right_area_form_mbl
+                            } `}
                             style={{ marginTop: -24, marginBottom: 0 }}
                             loading={submitting}
                           >

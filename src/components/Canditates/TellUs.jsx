@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import auth_main_img from "../../assets/img/video_left.png";
-import facebook from "../../assets/img/faecbook.svg";
-import instagram from "../../assets/img/instagram.svg";
-import twitter from "../../assets/img/twitter.svg";
-import arrow from "../../assets/img/arrow.svg";
-import "../../styles/Login.css";
-import video from "../../assets/img/video.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import auth_main_img from '../../assets/img/video_left.png';
+import facebook from '../../assets/img/faecbook.svg';
+import instagram from '../../assets/img/instagram.svg';
+import twitter from '../../assets/img/twitter.svg';
+import arrow from '../../assets/img/arrow.svg';
+import '../../styles/Login.css';
+import video from '../../assets/img/video.png';
 const TellUs = ({ setActive }) => {
   return (
     <div className="Login">
@@ -17,18 +17,16 @@ const TellUs = ({ setActive }) => {
         <div className="form_area ">
           <p>Questions 2 / 5</p>
           <h1>TELL US ABOUT YOUR SELF </h1>
-          <p>
-            This question is timed ! You have 15 seconds & unlimited Retakes.
-          </p>
+          <p>This question is timed ! You have 15 seconds & unlimited Retakes.</p>
 
           <form>
-            <img src={video} alt="" style={{ width: "100%" }} />
+            <img src={video} alt="" style={{ width: '100%' }} />
             <div className="button_wrapper">
               <button className="job_details">
                 Get Help
                 <img src={arrow} alt="" />
               </button>
-              <button onClick={(e) => setActive(3)}>
+              <button onClick={e => setActive(3)}>
                 Notes
                 <img src={arrow} alt="" />
               </button>
