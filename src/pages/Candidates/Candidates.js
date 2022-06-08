@@ -81,6 +81,7 @@ const Candidates = () => {
   const getData = async () => {
     setLoading(true);
     const data = await (archives ? getArchivedVideos() : getVideos());
+
     setVideos(data || []);
     setFilteredData(data || []);
     setLoading(false);

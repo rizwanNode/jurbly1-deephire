@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import auth_main_img from "../../assets/img/candidate.png";
-import facebook from "../../assets/img/faecbook.svg";
-import instagram from "../../assets/img/instagram.svg";
-import twitter from "../../assets/img/twitter.svg";
-import arrow from "../../assets/img/arrow.svg";
-import "../../styles/Login.css";
-import Input from "../../components/Input";
-import phone from "../../assets/img/phone.svg";
-import email from "../../assets/img/email.svg";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import auth_main_img from '../../assets/img/candidate.png';
+import facebook from '../../assets/img/faecbook.svg';
+import instagram from '../../assets/img/instagram.svg';
+import twitter from '../../assets/img/twitter.svg';
+import arrow from '../../assets/img/arrow.svg';
+import '../../styles/Login.css';
+import Input from '../../components/Input';
+import phone from '../../assets/img/phone.svg';
+import email from '../../assets/img/email.svg';
 const Welcome = ({ setActive }) => {
   return (
     <div className="Login">
@@ -54,7 +54,7 @@ const Welcome = ({ setActive }) => {
                 Job Detail
                 <img src={arrow} alt="" />
               </button>
-              <button onClick={(e) => setActive(2)}>
+              <button onClick={e => setActive(2)}>
                 Start now
                 <img src={arrow} alt="" />
               </button>
@@ -65,8 +65,8 @@ const Welcome = ({ setActive }) => {
         <div className="notes">
           <h1>Important Note :</h1>
           <p>
-            You will be asked to record answers to a series of prompts that will
-            ask you common interview questions. You will need :
+            You will be asked to record answers to a series of prompts that will ask you common
+            interview questions. You will need :
           </p>
           <ul>
             <li>Your phone or a computer with a camera</li>

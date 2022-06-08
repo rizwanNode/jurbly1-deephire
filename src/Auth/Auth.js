@@ -56,7 +56,7 @@ export default class Auth {
     return this.auth0.client.userInfo(accessToken, cb);
   };
 
-  signup = (email, password, name, userMetadata) => {
+  signup = (email, password, name, newfunction, userMetadata) => {
     $crisp.push([
       'set',
       'session:event',
@@ -73,8 +73,19 @@ export default class Auth {
       },
       err => {
         if (err) {
-          console.error('error', err);
-          alert(`Error: ${err.description}. Check the console for further details.`);
+          if (err.description == 'Invalid sign up') {
+            newfunction('Email Already Used');
+          } else if (err.description['rules']) {
+            let rules = err.description['rules'];
+            let text = '';
+            rules.forEach(EachRule => {
+              text += EachRule.message;
+              text += ' ';
+            });
+            newfunction(text);
+          }
+          console.log(err.description);
+
           return;
         }
 

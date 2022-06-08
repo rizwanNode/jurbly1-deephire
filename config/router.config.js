@@ -155,6 +155,7 @@ export default [
             path: '/account/settings/integrations',
             component: './Account/Settings/IntegrationSettings',
           },
+
           {
             path: '/account/settings/notification',
             component: './Account/Settings/NotificationView',

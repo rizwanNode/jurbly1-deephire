@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import auth_main_img from "../../assets/img/candidate.png";
-import facebook from "../../assets/img/faecbook.svg";
-import instagram from "../../assets/img/instagram.svg";
-import twitter from "../../assets/img/twitter.svg";
-import arrow from "../../assets/img/arrow.svg";
-import "../../styles/Login.css";
-import Input from "../../components/Input";
-import phone from "../../assets/img/phone.svg";
-import email from "../../assets/img/email.svg";
-import star from "../../assets/img/star.svg";
-import Select from "../Select";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import auth_main_img from '../../assets/img/candidate.png';
+import facebook from '../../assets/img/faecbook.svg';
+import instagram from '../../assets/img/instagram.svg';
+import twitter from '../../assets/img/twitter.svg';
+import arrow from '../../assets/img/arrow.svg';
+import '../../styles/Login.css';
+import Input from '../../components/Input';
+import phone from '../../assets/img/phone.svg';
+import email from '../../assets/img/email.svg';
+import star from '../../assets/img/star.svg';
+import Select from '../Select';
 const Done = () => {
   return (
     <div className="Login">
@@ -43,8 +43,8 @@ const Done = () => {
           <p>
             Thank you for attending the virtual interview for
             <Link to="/">Building Manager Position</Link> By
-            <Link to="/">RPH GLOBAL SDN BHD</Link>. We’ll be watching your
-            interview soon and will contact you about the nextsteps .
+            <Link to="/">RPH GLOBAL SDN BHD</Link>. We’ll be watching your interview soon and will
+            contact you about the nextsteps .
           </p>
 
           <form>
