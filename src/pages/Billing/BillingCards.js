@@ -13,7 +13,7 @@ const data = [
     type: 'purchase',
 
     buttonLabel: 'Start Now',
-    stripePlan: 'price_1L82t2Hgqvk3POlbay28LBcC',
+    stripePlan: 'price_1L8aIgHgqvk3POlbvygHpAYa',
 
     listItems: [
       {
