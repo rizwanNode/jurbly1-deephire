@@ -11,7 +11,7 @@ const style = {
   marginBottom: 10,
 };
 
-const CheckoutForm = props => {
+const CheckoutForm2 = props => {
   const { setReload, title, body, okText, visible, setVisible } = props;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -136,4 +136,4 @@ const CheckoutForm = props => {
   );
 };
 
-export default injectStripe(CheckoutForm);
+export default injectStripe(CheckoutForm2);
