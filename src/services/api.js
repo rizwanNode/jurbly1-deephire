@@ -315,6 +315,17 @@ export async function getPaymentMethods() {
   });
 }
 
+export async function addPaymentMethod2(paymentMethodId, successMessage) {
+  return request(
+    `${newApi}/companies/payment_methods2/${paymentMethodId}`,
+    {
+      method: 'POST',
+      headers: setHeaders(),
+    },
+    successMessage
+  );
+}
+
 export async function addPaymentMethod(paymentMethodId, successMessage) {
   return request(
     `${newApi}/companies/payment_methods/${paymentMethodId}`,

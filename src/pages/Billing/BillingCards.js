@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Elements } from 'react-stripe-elements';
 import PricingCards from '@/components/Upgrade/PricingCards';
 import UpdateStripeCard from '@/components/StripeCard/UpdateStripeCard';
+import UpdateStripeCard2 from '@/components/StripeCard/UpdateStripeCard2';
 import GlobalContext from '@/layouts/MenuContext';
 
 const data = [
@@ -79,7 +80,7 @@ const Upgrade = () => {
   return (
     <div>
       <Elements>
-        <UpdateStripeCard
+        <UpdateStripeCard2
           title={`Purchase ${plan.name} Plan`}
           okText="Purchase Now"
           body={
