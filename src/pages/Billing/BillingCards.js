@@ -7,7 +7,7 @@ import GlobalContext from '@/layouts/MenuContext';
 
 const data = [
   {
-    name: 'Jurbly Basic',
+    name: 'Basic Plan',
     description: 'For recruiters that want to explore upgrading the client/candidate experience',
     price: '$199/mo',
     priceLabel: 'Billed Monthly',
