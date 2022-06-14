@@ -10,7 +10,7 @@ const data = [
     name: 'Samll',
     description: 'Upgrade When you are ready',
     price: 'Free',
-    priceLabel: 'No Cost',
+    priceLabel: 'By Default No Cost',
     type: 'purchase',
 
     stripePlan: 'price_1L1TacHgqvk3POlbO6ypMkoZ',
