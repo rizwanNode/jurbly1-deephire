@@ -6,10 +6,41 @@ import UpdateStripeCard2 from '@/components/StripeCard/UpdateStripeCard2';
 import GlobalContext from '@/layouts/MenuContext';
 
 const data = [
+ {
+    name: 'Samll',
+    description: 'Upgrade When you are ready',
+    price: 'Free',
+    priceLabel: 'No Cost',
+    type: 'purchase',
+
+    stripePlan: 'price_1L1TacHgqvk3POlbO6ypMkoZ',
+
+    listItems: [
+      {
+        content: '1 Job/ Month',
+        tooltip: 'This is the number of positions you can actively interview for each month',
+      },
+      {
+        content: '10 User Seats',
+      },
+      {
+        content: '500 Candidates',
+      },
+      {
+        content: 'Custom branding',
+      },
+      {
+        content: 'Onboarding session',
+      },
+      {
+        content: 'Chat and phone support',
+      },
+    ],
+  },
   {
-    name: 'Basic Plan',
+    name: 'Growth',
     description: 'For recruiters that want to explore upgrading the client/candidate experience',
-    price: '$199/mo',
+    price: '$18/mo',
     priceLabel: 'Billed Monthly',
     type: 'purchase',
 
@@ -18,7 +49,7 @@ const data = [
 
     listItems: [
       {
-        content: '2 Jobs',
+        content: '10 Jobs/ Month',
         tooltip: 'This is the number of positions you can actively interview for each month',
       },
       {
