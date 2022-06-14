@@ -287,7 +287,7 @@ class LoginPage extends Component {
                     <div className={styles.Login_right_area_form}>
                       <h1 className={styles.Login_right_area_form_main_heading}>Sign up</h1>
                       <p className={styles.Login_right_area_form_main_p}>
-                        14 days free trials , No credit card required !
+                        Free trial , No credit card required !
                       </p>
 
                       <form
