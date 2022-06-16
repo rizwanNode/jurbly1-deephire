@@ -13,7 +13,7 @@ const data = [
     priceLabel: 'By Default No Cost',
     type: 'purchase',
 
-    stripePlan: 'price_1L1TacHgqvk3POlbO6ypMkoZ',
+    stripePlan: 'price_1LBDT5Hgqvk3POlbD5g4LjJL',
 
     listItems: [
       {
@@ -45,7 +45,7 @@ const data = [
     type: 'purchase',
 
     buttonLabel: 'Start Now',
-    stripePlan: 'price_1L8aIgHgqvk3POlbvygHpAYa',
+    stripePlan: 'price_1LBDSMHgqvk3POlbWke9hVsQ',
 
     listItems: [
       {
