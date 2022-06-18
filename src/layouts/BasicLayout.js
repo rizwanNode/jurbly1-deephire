@@ -393,7 +393,7 @@ class BasicLayout extends React.PureComponent {
     );
     return (
       <>
-        <StripeProvider apiKey="pk_test_51KVddnHgqvk3POlb9my5KilTk7iA9eQ9ickJ4t4qiRSr9vaWcdjyvn2IPnOqtc11pZ87fhpUdzXB7MSdlFsIyGyo00B49OCQF9">
+        <StripeProvider apiKey="pk_live_51KVddnHgqvk3POlbYjkTIu2ngiSVXefklZcDadBzWRR7ghJJtztGBSPuDMLh7vu5lIFF4W7TGeOoOwuMtuUbYiek00iCC8GnJC">
           <>
             <DocumentTitle title={this.getPageTitle(pathname)}>
               <ContainerQuery query={query}>
