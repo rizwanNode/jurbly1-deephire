@@ -97,7 +97,7 @@ class BasicLayout extends React.PureComponent {
     liveInterviews: [],
     videos: [],
     shareLinks: [],
-    stripeProduct: { metadata: { allowedInterviews: null } },
+    stripeProduct: { metadata: { Interviews: null } },
     recruiterProfile: null,
   };
 
