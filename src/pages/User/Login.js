@@ -234,7 +234,6 @@ class LoginPage extends Component {
                         ref={form => {
                           this.loginForm = form;
                         }}
-                        onSubmit={this.handleSubmit}
                         className={`${styles.Login_right_area_form} ${
                           styles.Login_right_area_form_mbl
                         }`}
@@ -294,7 +293,6 @@ class LoginPage extends Component {
                         ref={form => {
                           this.loginForm = form;
                         }}
-                        onSubmit={this.handleSubmit}
                         className={`${styles.Login_right_area_form} ${
                           styles.Login_right_area_form_mbl
                         }`}
